@@ -18,10 +18,21 @@
   <title></title>
 </head>
 <body>
-  <% if logged_in? %>
-  <h1>Welcome, <%=current_user.username%>! Thanks for logging in!</h1>
-  <a href="/logout">Log out here</a>
-  <%end%>
+  <header>
+    <h1>Welcome to Flashcards!</h1>
+    <nav>
+      <ul>
+        <% if logged_in? %>
+        <li><%= current_user.username %></li>
+        <li><a href="/logout">Logout</a></li>
+        <% else %>
+        <li><a href='/login'>Login</a></li>
+        <li><a href='/users'>Sign up</a></li>
+        <% end %>
+        <li><a href='/'>Home</a></li>
+      </ul>
+    </nav>
+  </header>
   <%= yield %>
 </body>
 </html>

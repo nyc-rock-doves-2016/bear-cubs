@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_secure_password
-  # has_many :rounds
+  has_many :rounds
   # has_many guesses, through: :rounds, source: :guess
   validates :username, :email, presence: true, uniqueness: true
   validates :password, length: {in: 5..20 }
