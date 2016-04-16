@@ -1,0 +1,10 @@
+<h1>Create User</h1>
+
+<%= erb :'_errors' %>
+
+<form action='/users' method='Post'>
+  <div>Username: <input type='text' name='user[username]'></div>
+  <div>Email address: <input type='text' name='user[email]'></div>
+  <div>Password: <input type='password' name='user[password]'></div>
+  <div><input type='submit' value='Create User'></div>
+</form>
