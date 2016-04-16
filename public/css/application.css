@@ -7,3 +7,59 @@
 th {
   text-align: left;
 }
+
+body {
+  background-color: #666699;
+
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  position: relative;
+  margin: 120px;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+    position: relative;
+  margin: 50px;
+}
+
+.form {
+  background-color: #ffcc99;
+  border-radius: 10px;
+  padding: 50px;
+  max-width:250px;
+  margin: 0 auto;
+  text-align: center;
+  margin:40px auto;
+}
+
+/*WIP nav*/
+.nav{
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  background-color: #ff9966;
+  border-bottom: 4px solid white;
+  border-radius: 10px;
+  width: 100%;
+  top: -20px;
+  left: -48px;
+  padding: 20px;
+  margin: 20px;
+  word-spacing: 10em;
+}
+
+.nav a{
+  text-decoration: none;
+}
+
+.nav a:hover{
+  font-style: italic;
+}
+
+
+

@@ -1,9 +1,10 @@
 <h1>Log in below!</h1>
 
 <%= erb :'_errors' %>
-
-<form action='/login' method='Post'>
-  E-mail Address:<input type='text' name='user[email]'>
-  Password: <input type='password' name='user[password]'>
-  <input type='submit' value='Login'>
+<div class='form'>
+<form action='/login' method='POST'>
+ <div> E-mail Address:<input type='text' name='user[email]'></div><br>
+  <div>Password: <input type='password' name='user[password]'></div><br>
+  <div><input type='submit' value='Login'></div>
 </form>
+</div>
