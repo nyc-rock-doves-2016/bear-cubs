@@ -1,8 +1,9 @@
 <h3>Available Decks to Play!</h3>
 
+<div class='form'>
 <% @decks.each do |deck| %>
 <ul>
   <li><a href="/decks/<%= deck.id %>"><%= deck.name %></a></li>
 </ul>
-
 <%end%>
+</div>

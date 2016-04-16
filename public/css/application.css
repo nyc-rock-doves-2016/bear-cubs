@@ -23,7 +23,7 @@ h1 {
 h3 {
   color: black;
   text-align: center;
-    position: relative;
+  position: relative;
   margin: 50px;
 }
 
@@ -35,6 +35,10 @@ h3 {
   margin: 0 auto;
   text-align: center;
   margin:40px auto;
+}
+
+.form a{
+ text-decoration: none;
 }
 
 /*WIP nav*/
