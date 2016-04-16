@@ -20,18 +20,18 @@
 <body>
   <header>
     <h1>Welcome to Flashcards!</h1>
-    <nav>
-      <ul>
+    <div class="nav">
+      <!-- <ul> -->
         <% if logged_in? %>
-        <li><%= current_user.username %></li>
-        <li><a href="/logout">Logout</a></li>
+        <%= current_user.username %>
+        <a href="/logout">Logout</a>
         <% else %>
-        <li><a href='/login'>Login</a></li>
-        <li><a href='/users'>Sign up</a></li>
+        <a href='/login'>Login</a>
+        <a href='/users'>Signup</a>
         <% end %>
-        <li><a href='/'>Home</a></li>
-      </ul>
-    </nav>
+        <a href='/'>Home</a>
+      <!-- </ul> -->
+    </div>
   </header>
   <%= yield %>
 </body>

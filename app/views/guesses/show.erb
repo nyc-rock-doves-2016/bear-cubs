@@ -1,0 +1,7 @@
+<h3>You answered correctly!</h3>
+
+<div class='form'>
+  <form action='/rounds/<%= @round.id %>/cards/<%=@card.id %>/answer' method='POST'>
+    <div><input type='submit' value='Next'></div>
+  </form>
+</div>
