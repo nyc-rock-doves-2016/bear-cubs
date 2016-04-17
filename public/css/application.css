@@ -8,27 +8,42 @@ th {
   text-align: left;
 }
 
+
 body {
-  background-color: #666699;
+  background-color: #404040;
+  font-family: 'Lato', sans-serif;
 
 }
 
 h1 {
-  color: black;
+  color: white;
   text-align: center;
   position: relative;
   margin: 120px;
+  margin-bottom: 50px;
 }
 
 h3 {
-  color: black;
+  color: white;
   text-align: center;
   position: relative;
+  margin: 20px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  position: relative;
+  margin: 10px;
+}
+
+#start-button{
+  text-align: center;
   margin: 50px;
 }
 
 .form {
-  background-color: #ffcc99;
+  background-color: #e6f7ff;
   border-radius: 10px;
   padding: 50px;
   max-width:250px;
@@ -38,7 +53,29 @@ h3 {
 }
 
 .form a{
- text-decoration: none;
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  color: black;
+}
+
+.form a:hover{
+  font-style: italic;
+}
+
+.form li{
+ list-style-type: none;
+}
+
+.start-form {
+  background-color: #e6f7ff;
+  border-radius: 10px;
+  padding: 10px;
+  max-width:250px;
+  max-height:120px;
+  margin: 0 auto;
+  text-align: center;
+  margin: 40px auto;
 }
 
 /*WIP nav*/
@@ -46,7 +83,7 @@ h3 {
   text-align: center;
   position: fixed;
   z-index: 9999;
-  background-color: #ff9966;
+  background-color: #006699;
   border-bottom: 4px solid white;
   border-radius: 10px;
   width: 100%;
@@ -59,11 +96,10 @@ h3 {
 
 .nav a{
   text-decoration: none;
+  color: black;
+  font-size: 18px;
 }
 
 .nav a:hover{
   font-style: italic;
 }
-
-
-
