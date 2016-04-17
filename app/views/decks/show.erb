@@ -1,9 +1,7 @@
-This is the deck show page.
+<h2><%= @deck.name %> Deck</h2>
 
-<h3><%= @deck.name %> Deck</h3>
-
+<div class='start-form'>
 <form action="/decks/<%= @deck.id %>/round" method="POST">
-
-
-  <input type="submit" value="Start!">
+  <div id="start-button"><input type="submit" value="Start!"></div>
 </form>
+</div>

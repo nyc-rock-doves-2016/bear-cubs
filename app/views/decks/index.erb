@@ -1,9 +1,10 @@
-<h3>Available Decks to Play!</h3>
+<h2>Available Decks to Play:</h2>
 
 <div class='form'>
 <% @decks.each do |deck| %>
-<ul>
-  <li><a href="/decks/<%= deck.id %>"><%= deck.name %></a></li>
-</ul>
+<a href="/decks/<%= deck.id %>"><%= deck.name %></a>
+<br>
+<br>
+
 <%end%>
 </div>

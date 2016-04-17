@@ -11,6 +11,7 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
@@ -23,7 +24,7 @@
     <div class="nav">
       <!-- <ul> -->
         <% if logged_in? %>
-        <%= current_user.username %>
+        <a href="/users/show"><%= current_user.username %></a>
         <a href="/logout">Logout</a>
         <% else %>
         <a href='/login'>Login</a>
