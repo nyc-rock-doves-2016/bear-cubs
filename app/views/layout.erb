@@ -24,7 +24,7 @@
     <div class="nav">
       <!-- <ul> -->
         <% if logged_in? %>
-        <a href="/users/show"><%= current_user.username %></a>
+        <a href="/users/<%= current_user.id %>"><%= current_user.username %></a>
         <a href="/logout">Logout</a>
         <% else %>
         <a href='/login'>Login</a>

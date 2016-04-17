@@ -1,48 +1,13 @@
 <h1>Create User</h1>
 
 <%= erb :'_errors' %>
-<!-- WORKING -->
+
 <div class='form'>
 <form action='/users' method='Post'>
-  <div>Username: <input type='text' name='user[username]'></div></br>
-  <div>Email address: <input type='text' name='user[email]'></div></br>
-  <div>Password: <input type='password' name='user[password]'></div></br>
+  <div><input type='text' name='user[username]' placeholder="Username"></div></br>
+  <div><input type='text' name='user[email]' placeholder="Email address"></div></br>
+  <div><input type='password' name='user[password]' placeholder="Password"></div></br>
   <div><input type='submit' value='Create User'></div>
 </form>
 </div>
-
-<!-- <div class='form'>
-  <div id='signup'>
-    <h1>Sign up for Free</h1>
-
-    <form action='/users' method='Post'>
-
-      <div class="top-row">
-            <div class="field-wrap">
-              <label>
-                Username<span class="req">*</span>
-              </label>
-              <input type="text" name='user[username]' required autocomplete="off" />
-            </div>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email" name='user[email]' required autocomplete="off"/>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Set A Password<span class="req">*</span>
-            </label>
-            <input type="password" name='user[password]'required autocomplete="off"/>
-          </div>
-
-          <input type="submit" value='Create User'/>
-
-          </form>
-
-        </div> -->
 

@@ -19,6 +19,7 @@ end
 #User Show Page
 get '/users/:id' do
   @user = User.find_by(id: params[:id])
+  # redirect '/'
   erb :'/users/show'
 end
 

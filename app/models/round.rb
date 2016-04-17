@@ -14,16 +14,17 @@ class Round < ActiveRecord::Base
     Guess.all.where(round_id: self.id).collect{ |guess| guess.card}
   end
 
-  def wrong_guesses
-    all_guesses.size - all_guesses.uniq.size
+  def first_guesses
+    wrong_guesses = self.guesses - self.correct_guesses
+    self.correct_guesses.select {|correct| !incorrect_guesses.find {|incorrect| correct.card == incorrect.card}}
   end
-
+  
   def total_cards
     self.deck.cards.size
   end
 
   def correct_guesses
-    total_cards - wrong_guesses
+    self.guesses.select {|guess| guess.is_correct?}
   end
 
 
